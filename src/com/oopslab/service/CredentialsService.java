@@ -13,10 +13,12 @@ public class CredentialsService {
 	
 	public String generatePassword () {
 		String pwdNum = "0123456789"; 
+		String pwdSpl = "!@#$%^&*";
 		String pwdSplChar ="AaBb!@#CcDdEeFfGgHh$%IiJjKkLlMmNnOoPpQqRrSs^&*TtUuVvWwXxYyZz";
 		
 		for (int i=0;i<3;i++) password += pwdNum.charAt((int)(Math.random()*pwdNum.length()));
-		for (int i=0;i<5;i++) password += pwdSplChar.charAt((int)(Math.random()*pwdSplChar.length()));
+		password += pwdSpl.charAt((int)(Math.random()*pwdSpl.length()));
+		for (int i=0;i<4;i++) password += pwdSplChar.charAt((int)(Math.random()*pwdSplChar.length()));
 		
 		//System.out.println ("Generated Password is : " + password);
 		return password;
