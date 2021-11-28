@@ -7,7 +7,7 @@ public class Employee {
 	private String firstName;
 	private String lastName;
 	private String department;
-	private String company = "2K";
+	private String company = "orange";
 	private Scanner sc = new Scanner(System.in);
 
 	public Employee (String fName,String lName) {
