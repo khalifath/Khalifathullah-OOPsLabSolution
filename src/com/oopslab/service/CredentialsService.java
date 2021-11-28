@@ -30,8 +30,8 @@ public class CredentialsService {
 			System.out.println ("Plesae check the data passed to this function");	
 		}else {
 			System.out.println("Dear " +fName +" your generated credentials are as follows");
-			System.out.println("Email is    --> " + generateEmailAddress(fName,lName,department,company));
-			System.out.println("Password is --> " + generatePassword());
+			System.out.println("Email    --> " + generateEmailAddress(fName,lName,department,company));
+			System.out.println("Password --> " + generatePassword());
 		}
 		
 	}
