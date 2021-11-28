@@ -73,6 +73,8 @@ public class Employee {
 				setDepartment("legal");
 				break;
 			default:
+				System.out.println("You have selected an invalid option, re-execute program and please select option between 1 and 4!! ");
+				System.exit(1);
 				break;
 		}
 	}
