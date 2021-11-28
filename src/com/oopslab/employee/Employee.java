@@ -77,5 +77,6 @@ public class Employee {
 				System.exit(1);
 				break;
 		}
+		sc.close();
 	}
 }
