@@ -5,7 +5,7 @@ import com.oopslab.service.*;
 public class EmployeeMain {
 
 	public static void main (String args[]) {
-		Employee emp = new Employee("KHALIFATHULLAH","khan");
+		Employee emp = new Employee("Khalifathullah","khan");
 		CredentialsService cs = new CredentialsService();
 		
 		emp.showDepartment();
