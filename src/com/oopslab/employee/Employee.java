@@ -56,7 +56,9 @@ public class Employee {
 		try {
 			option = sc.nextInt();
 		} catch (InputMismatchException e) {
-			System.out.println ("You have entered a non numeric character, please enter number between 1 and 4 !!!");
+			System.out.println ("You have entered a non numeric character, re-execute program and please enter number between 1 and 4 !!!");
+			System.exit(1);
+			sc.close();
 		}
 
 		switch(option) {
